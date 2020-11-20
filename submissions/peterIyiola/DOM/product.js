@@ -36,7 +36,7 @@ let quantity = document.getElementById('quantity'),
             shippingCost.innerHTML = 25000;
         }
         totalCost = shippingCost.innerHTML + summation;
-    
+    console.log(totalCost)
     }
 
     function validation(e) {
@@ -44,5 +44,5 @@ let quantity = document.getElementById('quantity'),
         productCost(e);
         return true;
     }
-    
+
     quantity.addEventListener('input', validation);
